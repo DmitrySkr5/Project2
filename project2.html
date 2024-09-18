@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Satisfy&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="project2.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="hamburger" onclick="hamburgerClick()">&#9776;</div>
+        <div class="profile-sec">
+            <a href="../index.html"><img src="../assets/myLogo.jpg" alt="profile image"></a>
+            <p class="name"><a href="../index.html">Dmitry Skripnik</a></p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">ראשי</a></li>
+            <li><a href="../about.html">אודות</a></li>
+            <li><a href="../contact.html">צור קשר</a></li>
+        </ul>
+    </nav>
+    <div class="container-top">
+        <h1 class="title-portfolio">זמן לקפה</h1>
+        <p class="top-text">פה אתם יכולים לצפות או להוריד את הפרויקט</p>
+        <div class="btn-wrap">
+            <input class="btn-top" type="submit" value="לצפייה בפרויקרט ">
+            <input class="btn-top" type="submit" value="להורדת הפרויקט">
+        </div>
+
+    </div>
+    <div class="icons-container">
+        <img src="../assets/img-HTML.png" alt="html img">
+        <img src="../assets/img-CSS.png" alt="css img">
+        <img src="../assets/img-Bootstrap.png" alt="bootstrap img">
+        <img src="../assets/img-SASS.png" alt="sass img">
+    </div>
+    <div id="container">
+        <div class="container-img">
+            <img src="../assets/Coffee.png" alt="coffeeImage">
+        </div>
+        <div dir="rtl" class="container-form">
+            <div class="container-form-title">
+                <h1>קפה טוב לבוקר טוב</h1>
+                <p>לקבלת קופון לקפה חינם ומפנק שיפתח לכם את היום בחיוך, יש למלא את הפרטים:</p>
+            </div>
+            <form>
+                <div class="form-control">
+                    <label for="name">שם מלא</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-control">
+                    <label for="email">דוא"ל</label>
+                    <input type="text" id="email" name="email" required>
+                </div>
+                <div class="form-control">
+                    <input class="btnS" type="button" value="שליחה">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer-name">Dmitry Skripnik</span>
+        <span class="footer-rights">כל הזכויות שמורות</span>
+    </div>
+
+    <script>
+        function hamburgerClick() {
+            let menu = document.querySelector(".nav-links");
+            if (menu.style.display == "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+            menu.style.position = "absolute";
+
+            menu.style.top = "15px";
+            menu.style.right = "30px";
+            menu.style.textAlign = "right";
+        }
+    </script>
+</body>
+
+</html>
